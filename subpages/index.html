@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>MP | CSS Style Guide</title>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/doodle/48/internet--v1.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/style.css?v=1.0" />
+  </head>
+  <!-- Body -->
+  <body>
+    <section class="main">
+      <h1>CSS Style Guide</h1>
+
+      <article class="container">
+        <h2>Atoms</h2>
+        <p class="titleText_font-18">Title</p>
+        <p class="bodyText_font-14">Body Text goes like this.</p>
+        <br />
+        <label class="label">Label for input fields.</label>
+        <br />
+        <input type="text" class="input" />
+        <br />
+
+        <input type="checkbox" name="check" class="input_checkbox" />
+        <br />
+        <button class="btn-primary">Btn Primary</button>
+        <button class="btn-secondary">Btn Secondary</button>
+      </article>
+
+      <article class="container">
+        <h2>Molecules</h2>
+        <div class="notification-primary">
+          <p class="bodyText_font-14">Body Text goes like this.</p>
+        </div>
+        <br />
+        <label for="inputTextMlc" class="label"
+          >Text field label goes here.</label
+        >
+        <input type="text" class="input" id="inputTextMlc" />
+        <br />
+        <label for="inputPasswordMlc" class="label"
+          >Password field label goes here.</label
+        >
+        <input type="password" class="input" id="inputPasswordMlc" />
+        <br />
+        <div class="container_checkbox">
+          <input
+            type="checkbox"
+            name="check"
+            id="tncMlc"
+            class="input_checkbox"
+          /><label class="label_checkbox" for="tncMlc">Check box label</label>
+        </div>
+        <br />
+      </article>
+
+      <article class="container">
+        <h2>Organism</h2>
+        <div class="form">
+          <p class="titleText_font-18 mb-4">Log In</p>
+          <div class="notification-primary mt-4">
+            <p class="bodyText_font-14">Account setup successful!</p>
+          </div>
+          <br />
+          <label for="inputText" class="label"
+            >Username</label
+          >
+          <input type="text" class="input" id="inputText" />
+          <br />
+          <label for="inputPassword" class="label"
+            >Password</label
+          >
+          <input type="password" class="input" id="inputPassword" />
+          <br />
+          <div class="container_checkbox">
+            <input
+              type="checkbox"
+              name="check"
+              id="tnc"
+              class="input_checkbox"
+            /><label class="label_checkbox" for="tnc">I have read and agree to the terms and conditions.</label>
+          </div>
+          <br />
+
+          <div class="btn-container">
+            <button class="btn-secondary">Cancel</button>
+            <button class="btn-primary">Submit</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
