@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>MP | Personalized CSS Style Guide</title>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/doodle/48/internet--v1.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/stylePersonalised.css" />
+  </head>
+  <!-- Body -->
+  <body>
+    <section class="main">
+      <h1>Personalized CSS Style Guide</h1>
+      
+      <p class="mt-4">Return to <a href="../index.html">Home</a></p>
+
+      <article class="container">
+        <h2>Atoms</h2>
+        <p class="text-title">Title</p>
+        <p class="text-body">Body Text goes like this.</p>
+        <br />
+        <label class="label">Label for input fields.</label>
+        <br />
+        <input type="text" class="input" />
+        <br />
+
+        <input type="checkbox" name="check" class="input_checkbox" />
+        <br />
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+          <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+        </svg>
+        <br>
+        <button class="btn-primary">Btn Primary</button>
+        <button class="btn-secondary">Btn Secondary</button>
+      </article>
+
+      <article class="container">
+        <h2>Molecules</h2>
+        <div class="notification-primary">
+
+          <p class="text-body"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="icon-notification mr-3">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg> Body Text goes like this.</p>
+        </div>
+        <br />
+        <label for="inputTextMlc" class="label"
+          >Text field label goes here.</label
+        >
+        <input type="text" class="input" id="inputTextMlc" />
+        <br />
+        <label for="inputPasswordMlc" class="label"
+          >Password field label goes here.</label
+        >
+        <input type="password" class="input" id="inputPasswordMlc" />
+        <br />
+        <div class="container_checkbox">
+          <input
+            type="checkbox"
+            name="check"
+            id="tncMlc"
+            class="input_checkbox"
+          /><label class="label_checkbox" for="tncMlc">Check box label</label>
+        </div>
+        <br />
+      </article>
+
+      <article class="container">
+        <h2>Organism</h2>
+        <div class="form">
+          <p class="text-title mb-4">Log In</p>
+          <div class="notification-primary mt-4">
+            <p class="text-body"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="icon-notification mr-3">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg> Account setup successful!</p>
+          </div>
+          <br />
+          <label for="inputText" class="label"
+            >Username</label
+          >
+          <input type="text" class="input" id="inputText" />
+          <br />
+          <label for="inputPassword" class="label"
+            >Password</label
+          >
+          <input type="password" class="input" id="inputPassword" />
+          <br />
+          <div class="container_checkbox">
+            <input
+              type="checkbox"
+              name="check"
+              id="tnc"
+              class="input_checkbox"
+            /><label class="label_checkbox" for="tnc">I have read and agree to the terms and conditions.</label>
+          </div>
+          <br />
+
+          <div class="btn-container">
+            <button class="btn-secondary">Cancel</button>
+            <button class="btn-primary">Log In<svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="icon-login ml-2" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+              <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+            </svg></button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
