@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Mid-Term Project</title>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/doodle/48/internet--v1.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/midTermProject.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="nav d-flex align-items-center display-two-background white-color justify-content-between">
+        <img src="../images/DSwhite.png" alt="logo-design-systems" class="logo">
+        <div class="d-flex align-items-center justify-content-around body-font">
+          <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">About</span>
+          <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Services</span>
+          <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Pricing</span>
+          <button class="btn-secondary">Get in Touch</button>
+        </div>
+      </nav>
+      <section class="container d-flex display-one-background hero-section hero-img">
+        <div class="on-primary-color d-flex flex-column justify-content-end">
+          <p class="display-font mb-4">Design Systems</p>
+          <p class="h2-font mt-2">Lorem ipsum dolor sit amet aut omnis. <span class="primary-color">Similique ex consequatur porro qui placeat quasi</span></p>
+        </div>
+      </section>
+      <section class="container d-flex justify-content-center align-items-end section-two section-two-image">
+        <div class="d-flex justify-content-end align-items-center flex-column background on-background-color pl-3 pt-3 pr-3 pb-3 box-shadow">
+          <p class="h3-font mb-3"> Et impedit quidem </p>
+          <p class="body-font mb-2">Et impedit quidem ab rerum corrupti sed culpa voluptatum est optio quam ea dicta omnis quo galisum dicta non eius dolorem. Et voluptatibus accusantium et nihil facere id consectetur doloremque! Sed sunt nulla sit nesciunt doloremque 33 doloremque voluptates et ipsa enim sit velit explicabo ex iusto accusamus. Qui assumenda sapiente aut illo quia eos dicta velit.
+          </p>
+          <button class="btn-primary">
+            Learn More
+          </button>
+        </div>
+      </section>
+      <section class="container background on-background-color section-three">
+        <div class="d-flex align-items-center mt-4 pt-4">
+          <div class="mr-4">
+            <p class="h2-font mb-3">Lorem ipsum dolor</p>
+            <p class="body-font mb-1">
+            Et impedit quidem ab rerum corrupti sed culpa voluptatum est optio quam ea dicta omnis quo galisum dicta non eius dolorem. Et voluptatibus accusantium et nihil facere id consectetur doloremque! Sed sunt nulla sit nesciunt doloremque 33 doloremque voluptates et ipsa enim sit velit explicabo ex iusto accusamus. Qui assumenda sapiente aut illo quia eos dicta velit.
+            </p>
+            <p class="body-font">
+            Est rerum mollitia est delectus exercitationem ut dolorem quia eos minus provident. Nam corrupti voluptatem est cupiditate doloremque eos repellendus maiores ad rerum earum quo perspiciatis sequi a molestiae eveniet.
+          </p>
+          </div>
+          <img src="../images/section2BG.jpeg" class="section-image box-shadow" alt="Section three image">
+        </div>
+      </section>
+      <section class="section-four container white-background d-flex flex-column justify-content-center align-items-center">
+        <p class="h2-font">
+          Rerum Corrupti
+        </p>
+        <div class="card-container d-flex justify-content-around mt-4 pt-3">
+          <div class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4">
+            <p class="h3-font mb-3">
+              Lorem Imspm
+            </p>
+            <p class="body-font mb-2">
+              Nam corrupti voluptatem est cupiditate doloremque eos repellendus maiores ad rerum earum quo perspiciatis sequi a molestiae eveniet.
+            </p>
+            <button class="btn-secondary">
+              View
+            </button>
+          </div>
+          <div class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4">
+            <p class="h3-font mb-3">
+              Lorem Imspm
+            </p>
+            <p class="body-font mb-2">
+              Nam corrupti voluptatem est cupiditate doloremque eos repellendus maiores ad rerum earum quo perspiciatis sequi a molestiae eveniet.
+            </p>
+            <button class="btn-secondary">
+              View
+            </button>
+          </div>
+          <div class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4">
+            <p class="h3-font mb-3">
+              Lorem Imspm
+            </p>
+            <p class="body-font mb-2">
+              Nam corrupti voluptatem est cupiditate doloremque eos repellendus maiores ad rerum earum quo perspiciatis sequi a molestiae eveniet.
+            </p>
+            <button class="btn-secondary">
+              View
+            </button>
+          </div>
+          <div class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3">
+            <p class="h3-font mb-3">
+              Lorem Imspm
+            </p>
+            <p class="body-font mb-2">
+              Nam corrupti voluptatem est cupiditate doloremque eos repellendus maiores ad rerum earum quo perspiciatis sequi a molestiae eveniet.
+            </p>
+            <button class="btn-secondary">
+              View
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="container section-five background on-background-color d-flex">
+        <img src="../images/thumbnail.png" alt="thumbnail" onclick={handleClick()} class="section-image-thumbnail box-shadow">
+        <div class="pl-4 pr-4 ml-4"> 
+          <p class="h2-font mb-2">
+            Nam corrupti
+          </p>
+          <p class="body-font">
+            Et impedit quidem ab rerum corrupti sed culpa voluptatum est optio quam ea dicta omnis quo galisum dicta non eius dolorem. Et voluptatibus accusantium et nihil facere id consectetur doloremque! Sed sunt nulla sit nesciunt doloremque 33 doloremque voluptates et ipsa enim sit velit explicabo ex iusto accusamus. Qui assumenda sapiente aut illo quia eos dicta velit.
+          </p>
+        </div>
+      </section>
+      <footer class="nav d-flex align-items-center gray-5-background white-color justify-content-between">
+        <img src="../images/DSwhite.png" alt="logo-design-systems" class="logo">
+        <small class="gray-4-color">© Nishad Patne | 2024</small>
+        <div class="d-flex align-items-center justify-content-around body-font">
+          <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">About</span>
+          <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Services</span>
+        </div>
+      </footer>
+    </main>
+    <section class="lightBox d-none" onclick={handleExit()} id="lightbox">
+      <iframe width="70%" height="75%" src="https://www.youtube.com/embed/YLo6g58vUm0?si=F4-uAJnU466nt8Ky" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+  </body>
+  
+  <script>
+    function handleClick (event){
+      document.getElementById("lightbox").classList.remove('d-none');
+      document.getElementById("lightbox").classList.add('d-flex');
+    }
+
+    function handleExit (event){
+      document.getElementById("lightbox").classList.remove('d-flex');
+      document.getElementById("lightbox").classList.add('d-none');
+    }
+  </script>
+</html>
