@@ -1,38 +1,39 @@
-# Midterm Project
+# Mid-Term Project Design Agency Landing Page
 
-The first half of this semester will be dedicated to one project composed of multiple assignments. While this README file only contains the instructions for the first assignment, you will continue to receive new assignments and updated instructions via Canvas that will all apply to expanding this project. A General timeline is as follows:
+## Project Description
 
-| Weeks | Focus |
-| -------- | ------- |
-| 1-2 | Component Based Design |
-| 3-4 | Templates & Page Design |
-| 5-6 | Practical Javascript |
-| 7-8 | Advanced CSS |
+This project is a landing page for a hypothetical design agency named "Design Systems." It serves as a demonstration of basic HTML structure and JavaScript functionality to implement a lightbox feature. The landing page introduces the concept of Design Systems as a service and showcases the agency's brand.
 
-The overall goal of this project will be to familiarize yourself with the fundamentals of front-end web design and the basics of front-end development. This should expand on the skills you gained in Technology for Design and greatly improve your ability to interface with web developers and software engineers on digital projects.
+## HTML Semantics and Accessibility Compliance
 
-To begin this project, first clone this repository and merge it into the repository you created and shared with me the first day of class. I will continue to check your work on GitHub, so please be sure you are committing and pushing your work to GitHub on a regular basis.
+- **HTML Structure**: The HTML is structured using semantic elements like `<nav>`, `<section>`, `<footer>`, and `<main>` for better accessibility and SEO.
+  
+- **Alt Attributes**: All images include descriptive alt attributes to ensure accessibility for users with screen readers.
 
-## Getting Started
+## CSS File Structure and Capabilities
 
-Our first step will be to focus on the concept of component based design and the atomic design system popularized by Brad Frost. If you are not already familiar with these concepts, [please review the basics here](https://bradfrost.com/blog/post/atomic-web-design/). You can also read Brad's entire book on the atomic design system [here](https://atomicdesign.bradfrost.com/table-of-contents/).
+### Framework Inspiration:
+- The CSS framework is inspired by Bootstrap, focusing on visual aspects, color schemes, and typography systems.
 
-The premise of the atomic design system is to base your web designs on repeatable and reusable components rather than designing entire pages at a time. This ensures that your designs are consistent across multiple pages and make it as simple as possible for your ideas to be implemented, revised, and maintained by a developer.
+### Color System:
+- The color system includes predefined variables for primary, secondary, and grayscale shades to ensure consistency across the design.
 
-To put these concepts into practice and demonstrate your understanding of them, please pick a website of your choice. You will then reverse engineer that site design and catalogue examples of atoms, molecules, and organisms present on that site. You can directly copy sections of the markup from your chosen site, but please keep all styles extremely minimal. All fonts can follow the default styles found in this repository and all colors should be greyscale. Add a brief description to each example in the structure provided within this project (see the `example-1.html` file in the atoms folder for guidance). If you don't know what website to choose, some great examples can be found at [awwwards.com](https://www.awwwards.com/).
+### Typography:
+- Utilizes the 'Inter' font family from Google Fonts with various weights for different text elements.
 
-## Atoms
+### Responsive Design:
+- The current version lacks responsiveness but is designed with responsiveness in mind for future implementation.
 
-Please find 7 examples of atoms for your site. Create one page for each example by copying the format/code found in the `example-1.html` file.
+### Components and Utility Classes:
+- Provides utility classes for flexbox, margin, padding, and display properties to streamline styling.
 
-## Molecules
+## Resources Used:
 
-Please find 5 examples of molecules for your site. Ensure that they include at lest some of the atoms from the previous step. Create one page for each as you did previously.
+- **Google Fonts**: Utilized the 'Inter' font family for typography.
+- **Bootstrap Icons**: Imported icons using Bootstrap Icons for various UI elements.
+- **YouTube Embed**: Embedded a YouTube video to showcase introductory content.
+- **FreePik**: Used for some of the images in the project.
+- **Coolors**: Generated color palette for the design.
+- **Bootstrap**: Inspired by the Bootstrap framework for styling conventions and component ideas.
+- **ChatGPT**: Used for generating UX copy (text) throughout the landing page.
 
-## Organisms
-
-Please find 3 examples of organisms for your site. Ensure that they include at lest one of the molecules from the previous step. Create one page for each as you did previously.
-
-## Submission
-
-Once you have finished your project, push all changes to your remote repository on GitHub and leave a comment on the 'Starting Your Midterm Project' discussion on Canvas notifying me that your work is ready for review.

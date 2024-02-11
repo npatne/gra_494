@@ -1,3 +1,9 @@
+/* 
+Author: Nishad Patne
+Date:  Feb 10 2024
+Description: Light weight css framework inspired by bootstrap framework. Current version includes just the visual aspect, color and type system along with need basis components and utility classes. Responsiveness, yet to implement. 
+*/
+
 /* Default */
 :root {
 
@@ -26,8 +32,8 @@
   --display-two: #232157; 
   
  
-  --white: #F7F9FA; /* 60% lighter shade of gray */
-  --black: #212121; /* 60% darker shade of gray */
+  --white: #F7F9FA; 
+  --black: #212121;
 }
 
 body {
@@ -130,15 +136,27 @@ background-repeat: no-repeat;
 
 .lightBox {
   background-color: rgba(0, 0, 0, 0.7);
-  position: fixed; /* Use fixed position to overlay on top of the page */
+  position: fixed; 
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 9999; /* Ensure the modal is on top of other elements */
+  z-index: 9999; 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.close-icon{
+  font-size: 2.5rem;
+  color: var(--white);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.close-icon:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
 }
 
 .btn-primary {
@@ -180,6 +198,11 @@ background-repeat: no-repeat;
 
 .rounded{
   border-radius: 0.5rem;
+}
+
+.card{
+  height: 18rem;
+  width: 15rem;
 }
 
 /* color classes */

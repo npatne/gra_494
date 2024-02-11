@@ -1,3 +1,9 @@
+<!--
+Author: Nishad Patne
+Date:  Feb 10 2024
+Description: Midterm project with basic html structure and javascript functionality to run the lightbox. Responsiveness yet to be implemented. The project is based on simple Design System introduction, Design as a Service brand. 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <!-- Head -->
@@ -13,6 +19,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -33,13 +40,13 @@
       <section class="container d-flex display-one-background hero-section hero-img">
         <div class="on-primary-color d-flex flex-column justify-content-end">
           <p class="display-font mb-4">Design Systems</p>
-          <p class="h2-font mt-2">Lorem ipsum dolor sit amet aut omnis. <span class="primary-color">Similique ex consequatur porro qui placeat quasi</span></p>
+          <p class="h2-font mt-2">Crafting Cohesive Experiences <span class="primary-color">Bespoke or Fast paced Digital Experiences That Inspire.</span></p>
         </div>
       </section>
       <section class="container d-flex justify-content-center align-items-end section-two section-two-image">
         <div class="d-flex justify-content-end align-items-center flex-column background on-background-color pl-3 pt-3 pr-3 pb-3 box-shadow">
-          <p class="h3-font mb-3"> Et impedit quidem </p>
-          <p class="body-font mb-2">Et impedit quidem ab rerum corrupti sed culpa voluptatum est optio quam ea dicta omnis quo galisum dicta non eius dolorem. Et voluptatibus accusantium et nihil facere id consectetur doloremque! Sed sunt nulla sit nesciunt doloremque 33 doloremque voluptates et ipsa enim sit velit explicabo ex iusto accusamus. Qui assumenda sapiente aut illo quia eos dicta velit.
+          <p class="h3-font mb-3"> Unlocking Design Potential </p>
+          <p class="body-font mb-2">At Design Systems, we specialize in creating and implementing tailored design systems that elevate your brand's identity and user experience. Our expertise spans from crafting bespoke design languages to leveraging established frameworks like Google Material Theme, Salesforce Lightning Design, and Apple Human Interface Guidelines. Let's collaborate to transform your vision into reality.
           </p>
           <button class="btn-primary">
             Learn More
@@ -49,12 +56,12 @@
       <section class="container background on-background-color section-three">
         <div class="d-flex align-items-center mt-4 pt-4">
           <div class="mr-4">
-            <p class="h2-font mb-3">Lorem ipsum dolor</p>
-            <p class="body-font mb-1">
-            Et impedit quidem ab rerum corrupti sed culpa voluptatum est optio quam ea dicta omnis quo galisum dicta non eius dolorem. Et voluptatibus accusantium et nihil facere id consectetur doloremque! Sed sunt nulla sit nesciunt doloremque 33 doloremque voluptates et ipsa enim sit velit explicabo ex iusto accusamus. Qui assumenda sapiente aut illo quia eos dicta velit.
+            <p class="h2-font mb-4">Demystifying Design Systems</p>
+            <p class="body-font mt-2 mb-1">
+              Curious about what design systems are and how they can revolutionize your digital presence? Design Systems offers you a comprehensive guide to understanding the fundamentals of design systems. 
             </p>
             <p class="body-font">
-            Est rerum mollitia est delectus exercitationem ut dolorem quia eos minus provident. Nam corrupti voluptatem est cupiditate doloremque eos repellendus maiores ad rerum earum quo perspiciatis sequi a molestiae eveniet.
+              Dive into our curated resources to learn about the principles, components, and benefits of implementing design systems in your projects. Empower yourself with the knowledge to enhance consistency, efficiency, and user experience across all your digital platforms.
           </p>
           </div>
           <img src="../images/section2BG.jpeg" class="section-image box-shadow" alt="Section three image">
@@ -62,50 +69,50 @@
       </section>
       <section class="section-four container white-background d-flex flex-column justify-content-center align-items-center">
         <p class="h2-font">
-          Rerum Corrupti
+          Our Expertise and Services
         </p>
         <div class="card-container d-flex justify-content-around mt-4 pt-3">
           <div class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4">
             <p class="h3-font mb-3">
-              Lorem Imspm
+              Bespoke Design Systems
             </p>
             <p class="body-font mb-2">
-              Nam corrupti voluptatem est cupiditate doloremque eos repellendus maiores ad rerum earum quo perspiciatis sequi a molestiae eveniet.
+              Our bespoke design systems are meticulously crafted to reflect your brand's unique personality and meet the specific needs of your audience.
             </p>
-            <button class="btn-secondary">
+            <button class="card-button btn-secondary">
               View
             </button>
           </div>
           <div class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4">
             <p class="h3-font mb-3">
-              Lorem Imspm
+              Google Material Theme
             </p>
             <p class="body-font mb-2">
-              Nam corrupti voluptatem est cupiditate doloremque eos repellendus maiores ad rerum earum quo perspiciatis sequi a molestiae eveniet.
+              Harness the power of Google's Material Theme to create sleek and intuitive interfaces that resonate with modern users.
             </p>
-            <button class="btn-secondary">
+            <button class="card-button btn-secondary">
               View
             </button>
           </div>
           <div class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4">
             <p class="h3-font mb-3">
-              Lorem Imspm
+              Salesforce Lightning Design
             </p>
             <p class="body-font mb-2">
-              Nam corrupti voluptatem est cupiditate doloremque eos repellendus maiores ad rerum earum quo perspiciatis sequi a molestiae eveniet.
+              Optimize user productivity and satisfaction with Salesforce Lightning Design. Our experts leverage this robust framework to design interfaces that prioritize efficiency, scalability, and user engagement.
             </p>
-            <button class="btn-secondary">
+            <button class="card-button btn-secondary">
               View
             </button>
           </div>
           <div class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3">
             <p class="h3-font mb-3">
-              Lorem Imspm
+              Apple Human Interface Guidelines
             </p>
             <p class="body-font mb-2">
-              Nam corrupti voluptatem est cupiditate doloremque eos repellendus maiores ad rerum earum quo perspiciatis sequi a molestiae eveniet.
+              Elevate your app's design to Apple's standards with our adherence to Human Interface Guidelines.
             </p>
-            <button class="btn-secondary">
+            <button class="card-button btn-secondary">
               View
             </button>
           </div>
@@ -114,11 +121,11 @@
       <section class="container section-five background on-background-color d-flex">
         <img src="../images/thumbnail.png" alt="thumbnail" onclick={handleClick()} class="section-image-thumbnail box-shadow">
         <div class="pl-4 pr-4 ml-4"> 
-          <p class="h2-font mb-2">
-            Nam corrupti
+          <p class="h2-font mb-4">
+            New To Design Systems? Watch this Introduction
           </p>
           <p class="body-font">
-            Et impedit quidem ab rerum corrupti sed culpa voluptatum est optio quam ea dicta omnis quo galisum dicta non eius dolorem. Et voluptatibus accusantium et nihil facere id consectetur doloremque! Sed sunt nulla sit nesciunt doloremque 33 doloremque voluptates et ipsa enim sit velit explicabo ex iusto accusamus. Qui assumenda sapiente aut illo quia eos dicta velit.
+            Dive into the world of design systems with Figma's introductory video. Gain insights into the principles, benefits, and best practices of design system implementation, and discover how it can revolutionize your approach to digital design and development.
           </p>
         </div>
       </section>
@@ -132,10 +139,10 @@
       </footer>
     </main>
     <section class="lightBox d-none" onclick={handleExit()} id="lightbox">
+      <i class="bi bi-x-circle-fill close-icon" onclick={handleExit()}></i>
       <iframe width="70%" height="75%" src="https://www.youtube.com/embed/YLo6g58vUm0?si=F4-uAJnU466nt8Ky" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
   </body>
-  
   <script>
     function handleClick (event){
       document.getElementById("lightbox").classList.remove('d-none');
