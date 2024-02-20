@@ -191,7 +191,7 @@ Description: Midterm project with basic html structure and javascript functional
     <section class="lightBox d-none" id="lightbox">
       <i class="bi bi-x-circle-fill close-icon" id="closeButton"></i>
       <div id="player"></div>
-      <span class="bold-body-font white-color mt-3">Already in started, what to <span class="display-one-color h3-font resume-link">Resume</span>?</span>
+      <span class="bold-body-font white-color mt-3">Already in started, what to <span class="display-one-color h3-font resume-link" onclick={resumeVideo()} >Resume</span>?</span>
     </section>
   </body>
   <script>
@@ -239,17 +239,23 @@ Description: Midterm project with basic html structure and javascript functional
     document.getElementById("lightbox").addEventListener("exitButton",handleExit);
 
     function handleExit(e) {
-      // console.log('🐱‍🏍',e.target.tagName);
       if(e.target.tagName == "SPAN"){
         return;
       }
       document.getElementById("lightbox").classList.remove("d-flex");
       document.getElementById("lightbox").classList.add("d-none");
+      currentPlaybackTime = player.getCurrentTime();
       stopVideo();
     }
 
     function openAboutMe(){
       window.open("https://nishadpatne.framer.website/","_blank")
+    }
+
+    function resumeVideo(){
+      console.log('🐱‍🏍 current time', currentPlaybackTime);
+      player.seekTo(currentPlaybackTime);
+
     }
     
     </script>
