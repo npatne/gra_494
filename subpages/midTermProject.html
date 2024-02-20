@@ -17,9 +17,12 @@ Description: Midterm project with basic html structure and javascript functional
       href="https://img.icons8.com/doodle/48/internet--v1.png"
       type="image/x-icon"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -28,29 +31,50 @@ Description: Midterm project with basic html structure and javascript functional
   </head>
   <body>
     <main>
-      <nav class="nav d-flex align-items-center display-two-background white-color justify-content-between">
-        <img src="../images/DSwhite.png" alt="logo-design-systems" class="logo">
+      <nav
+        class="nav d-flex align-items-center display-two-background white-color justify-content-between"
+      >
+        <img
+          src="../images/DSwhite.png"
+          alt="logo-design-systems"
+          class="logo"
+        />
         <div class="d-flex align-items-center justify-content-around body-font">
-          <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">About</span>
+          <span onclick="{openAboutMe()}" class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">About</span>
           <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Services</span>
           <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Pricing</span>
           <button class="btn-secondary">Get in Touch</button>
         </div>
       </nav>
-      <section class="container d-flex display-one-background hero-section hero-img">
+      <section
+        class="container d-flex display-one-background hero-section hero-img"
+      >
         <div class="on-primary-color d-flex flex-column justify-content-end">
           <p class="display-font mb-4">Design Systems</p>
-          <p class="h2-font mt-2">Crafting Cohesive Experiences <span class="primary-color">Bespoke or Fast paced Digital Experiences That Inspire.</span></p>
+          <p class="h2-font mt-2">
+            Crafting Cohesive Experiences
+            <span class="primary-color"
+              >Bespoke or Fast paced Digital Experiences That Inspire.</span
+            >
+          </p>
         </div>
       </section>
-      <section class="container d-flex justify-content-center align-items-end section-two section-two-image">
-        <div class="d-flex justify-content-end align-items-center flex-column background on-background-color pl-3 pt-3 pr-3 pb-3 box-shadow">
-          <p class="h3-font mb-3"> Unlocking Design Potential </p>
-          <p class="body-font mb-2">At Design Systems, we specialize in creating and implementing tailored design systems that elevate your brand's identity and user experience. Our expertise spans from crafting bespoke design languages to leveraging established frameworks like Google Material Theme, Salesforce Lightning Design, and Apple Human Interface Guidelines. Let's collaborate to transform your vision into reality.
+      <section
+        class="container d-flex justify-content-center align-items-end section-two section-two-image"
+      >
+        <div
+          class="d-flex justify-content-end align-items-center flex-column background on-background-color pl-3 pt-3 pr-3 pb-3 box-shadow"
+        >
+          <p class="h3-font mb-3">Unlocking Design Potential</p>
+          <p class="body-font mb-2">
+            At Design Systems, we specialize in creating and implementing
+            tailored design systems that elevate your brand's identity and user
+            experience. Our expertise spans from crafting bespoke design
+            languages to leveraging established frameworks like Google Material
+            Theme, Salesforce Lightning Design, and Apple Human Interface
+            Guidelines. Let's collaborate to transform your vision into reality.
           </p>
-          <button class="btn-primary">
-            Learn More
-          </button>
+          <button class="btn-primary">Learn More</button>
         </div>
       </section>
       <section class="container background on-background-color section-three">
@@ -58,100 +82,175 @@ Description: Midterm project with basic html structure and javascript functional
           <div class="mr-4">
             <p class="h2-font mb-4">Demystifying Design Systems</p>
             <p class="body-font mt-2 mb-1">
-              Curious about what design systems are and how they can revolutionize your digital presence? Design Systems offers you a comprehensive guide to understanding the fundamentals of design systems. 
+              Curious about what design systems are and how they can
+              revolutionize your digital presence? Design Systems offers you a
+              comprehensive guide to understanding the fundamentals of design
+              systems.
             </p>
             <p class="body-font">
-              Dive into our curated resources to learn about the principles, components, and benefits of implementing design systems in your projects. Empower yourself with the knowledge to enhance consistency, efficiency, and user experience across all your digital platforms.
-          </p>
+              Dive into our curated resources to learn about the principles,
+              components, and benefits of implementing design systems in your
+              projects. Empower yourself with the knowledge to enhance
+              consistency, efficiency, and user experience across all your
+              digital platforms.
+            </p>
           </div>
-          <img src="../images/section2BG.jpeg" class="section-image box-shadow" alt="Section three image">
+          <img
+            src="../images/section2BG.jpeg"
+            class="section-image box-shadow"
+            alt="Section three image"
+          />
         </div>
       </section>
-      <section class="section-four container white-background d-flex flex-column justify-content-center align-items-center">
-        <p class="h2-font">
-          Our Expertise and Services
-        </p>
+      <section
+        class="section-four container white-background d-flex flex-column justify-content-center align-items-center"
+      >
+        <p class="h2-font">Our Expertise and Services</p>
         <div class="card-container d-flex justify-content-around mt-4 pt-3">
-          <div class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4">
-            <p class="h3-font mb-3">
-              Bespoke Design Systems
-            </p>
+          <div
+            class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4"
+          >
+            <p class="h3-font mb-3">Bespoke Design Systems</p>
             <p class="body-font mb-2">
-              Our bespoke design systems are meticulously crafted to reflect your brand's unique personality and meet the specific needs of your audience.
+              Our bespoke design systems are meticulously crafted to reflect
+              your brand's unique personality and meet the specific needs of
+              your audience.
             </p>
-            <button class="card-button btn-secondary">
-              View
-            </button>
+            <button class="card-button btn-secondary">View</button>
           </div>
-          <div class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4">
-            <p class="h3-font mb-3">
-              Google Material Theme
-            </p>
+          <div
+            class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4"
+          >
+            <p class="h3-font mb-3">Google Material Theme</p>
             <p class="body-font mb-2">
-              Harness the power of Google's Material Theme to create sleek and intuitive interfaces that resonate with modern users.
+              Harness the power of Google's Material Theme to create sleek and
+              intuitive interfaces that resonate with modern users.
             </p>
-            <button class="card-button btn-secondary">
-              View
-            </button>
+            <button class="card-button btn-secondary">View</button>
           </div>
-          <div class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4">
-            <p class="h3-font mb-3">
-              Salesforce Lightning Design
-            </p>
+          <div
+            class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4"
+          >
+            <p class="h3-font mb-3">Salesforce Lightning Design</p>
             <p class="body-font mb-2">
-              Optimize user productivity and satisfaction with Salesforce Lightning Design. Our experts leverage this robust framework to design interfaces that prioritize efficiency, scalability, and user engagement.
+              Optimize user productivity and satisfaction with Salesforce
+              Lightning Design. Our experts leverage this robust framework to
+              design interfaces that prioritize efficiency, scalability, and
+              user engagement.
             </p>
-            <button class="card-button btn-secondary">
-              View
-            </button>
+            <button class="card-button btn-secondary">View</button>
           </div>
-          <div class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3">
-            <p class="h3-font mb-3">
-              Apple Human Interface Guidelines
-            </p>
+          <div
+            class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3"
+          >
+            <p class="h3-font mb-3">Apple Human Interface Guidelines</p>
             <p class="body-font mb-2">
-              Elevate your app's design to Apple's standards with our adherence to Human Interface Guidelines.
+              Elevate your app's design to Apple's standards with our adherence
+              to Human Interface Guidelines.
             </p>
-            <button class="card-button btn-secondary">
-              View
-            </button>
+            <button class="card-button btn-secondary">View</button>
           </div>
         </div>
       </section>
-      <section class="container section-five background on-background-color d-flex">
-        <img src="../images/thumbnail.png" alt="thumbnail" onclick={handleClick()} class="section-image-thumbnail box-shadow">
-        <div class="pl-4 pr-4 ml-4"> 
+      <section
+        class="container section-five background on-background-color d-flex"
+      >
+        <img
+          src="../images/thumbnail.png"
+          alt="thumbnail"
+          onclick="{handleClick()}"
+          class="section-image-thumbnail box-shadow"
+        />
+        <div class="pl-4 pr-4 ml-4">
           <p class="h2-font mb-4">
             New To Design Systems? Watch this Introduction
           </p>
           <p class="body-font">
-            Dive into the world of design systems with Figma's introductory video. Gain insights into the principles, benefits, and best practices of design system implementation, and discover how it can revolutionize your approach to digital design and development.
+            Dive into the world of design systems with Figma's introductory
+            video. Gain insights into the principles, benefits, and best
+            practices of design system implementation, and discover how it can
+            revolutionize your approach to digital design and development.
           </p>
         </div>
       </section>
-      <footer class="nav d-flex align-items-center gray-5-background white-color justify-content-between">
-        <img src="../images/DSwhite.png" alt="logo-design-systems" class="logo">
+      <footer
+        class="nav d-flex align-items-center gray-5-background white-color justify-content-between"
+      >
+        <img
+          src="../images/DSwhite.png"
+          alt="logo-design-systems"
+          class="logo"
+        />
         <small class="gray-4-color">© Nishad Patne | 2024</small>
         <div class="d-flex align-items-center justify-content-around body-font">
-          <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">About</span>
+          <span onclick="{openAboutMe()}" class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">About</span>
           <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Services</span>
         </div>
       </footer>
     </main>
-    <section class="lightBox d-none" onclick={handleExit()} id="lightbox">
-      <i class="bi bi-x-circle-fill close-icon" onclick={handleExit()}></i>
-      <iframe width="70%" height="75%" src="https://www.youtube.com/embed/YLo6g58vUm0?si=F4-uAJnU466nt8Ky" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <section class="lightBox d-none" id="lightbox">
+      <i class="bi bi-x-circle-fill close-icon" id="closeButton"></i>
+      <div id="player"></div>
+      <span class="bold-body-font white-color mt-3">Already in started, what to <span class="display-one-color h3-font resume-link">Resume</span>?</span>
     </section>
   </body>
   <script>
-    function handleClick (event){
-      document.getElementById("lightbox").classList.remove('d-none');
-      document.getElementById("lightbox").classList.add('d-flex');
+    var scriptTag = document.createElement("script");
+    var currentPlaybackTime;
+    scriptTag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName("script")[0];
+    firstScriptTag.parentNode.insertBefore(scriptTag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player("player", {
+        height: window.innerHeight*0.8,
+        width: window.innerWidth*0.7,
+        videoId: "YLo6g58vUm0",
+        playerVars: {
+          playsinline: 1,
+        },
+        events: {
+          onReady: onPlayerReady,
+          onStateChange: onPlayerStateChange,
+        },
+      });
     }
 
-    function handleExit (event){
-      document.getElementById("lightbox").classList.remove('d-flex');
-      document.getElementById("lightbox").classList.add('d-none');
+    function onPlayerStateChange(event){
+
     }
-  </script>
+
+    function onPlayerReady(event) {
+      // event.target.playVideo();
+    }
+
+    function stopVideo() {
+      player.stopVideo();
+    }
+
+    function handleClick(event) {
+      document.getElementById("lightbox").classList.remove("d-none");
+      document.getElementById("lightbox").classList.add("d-flex");
+      player.playVideo();
+    }
+
+    document.getElementById("lightbox").addEventListener("click",handleExit);
+    document.getElementById("lightbox").addEventListener("exitButton",handleExit);
+
+    function handleExit(e) {
+      // console.log('🐱‍🏍',e.target.tagName);
+      if(e.target.tagName == "SPAN"){
+        return;
+      }
+      document.getElementById("lightbox").classList.remove("d-flex");
+      document.getElementById("lightbox").classList.add("d-none");
+      stopVideo();
+    }
+
+    function openAboutMe(){
+      window.open("https://nishadpatne.framer.website/","_blank")
+    }
+    
+    </script>
 </html>

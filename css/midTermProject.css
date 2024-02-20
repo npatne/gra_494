@@ -205,6 +205,12 @@ background-repeat: no-repeat;
   width: 15rem;
 }
 
+.resume-link:hover{
+text-decoration: underline;
+transition: text-decoration 0.3s ease-in-out;
+cursor: pointer;
+}
+
 /* color classes */
 
 /* Background Colors */
