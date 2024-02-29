@@ -32,29 +32,41 @@ Description: Midterm project with basic html structure and javascript functional
   <body>
     <main>
       <div>
-      <nav
-        class="nav d-flex align-items-center display-two-background white-color justify-content-between"
-      >
-        <img
-          src="../images/DSwhite.png"
-          alt="logo-design-systems"
-          class="logo"
-        />
-          <i class="bi bi-list h2-font nav-open" onclick={handleNav()}></i>
-          <i class="bi bi-x h2-font nav-close" onclick={handleNav()}></i>
-        <div class="d-flex align-items-center justify-content-around nav-link-container-horizontal body-font">
-          <span onclick="{openAboutMe()}" class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">About</span>
-          <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Services</span>
-          <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Pricing</span>
-          <button class="btn-secondary">Get in Touch</button>
+        <nav
+          class="nav d-flex align-items-center display-two-background white-color justify-content-between"
+        >
+          <img
+            src="../images/DSwhite.png"
+            alt="logo-design-systems"
+            class="logo"
+          />
+          <i class="bi bi-list h2-font nav-open" onclick="{handleNav()}"></i>
+          <i class="bi bi-x h2-font nav-close" onclick="{handleNav()}"></i>
+          <div
+            class="d-flex align-items-center justify-content-around nav-link-container-horizontal body-font"
+          >
+            <span
+              onclick="{openAboutMe()}"
+              class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2"
+              >About</span
+            >
+            <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Services</span>
+            <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Pricing</span>
+            <button class="btn-secondary">Get in Touch</button>
+          </div>
+        </nav>
+        <div
+          role="navigation"
+          id="nav"
+          class="nav-link-container-vertical display-two-background body-font white-color pt-2 pb-4"
+        >
+          <span onclick="{openAboutMe()}" class="nav-link pl-4 pt-2 d-block"
+            >About</span
+          >
+          <span class="nav-link pl-4 pt-3 d-block">Services</span>
+          <span class="nav-link pl-4 pt-3 d-block">Pricing</span>
+          <span class="nav-link pl-4 pt-3 d-block">Get In Touch</span>
         </div>
-      </nav>
-      <div role="navigation" id="nav" class="nav-link-container-vertical display-two-background body-font white-color pt-2 pb-4">
-        <span onclick="{openAboutMe()}" class="nav-link pl-4 pt-2 d-block">About</span>
-        <span class="nav-link pl-4 pt-3 d-block">Services</span>
-        <span class="nav-link pl-4 pt-3 d-block">Pricing</span>
-        <span class="nav-link pl-4 pt-3 d-block">Get In Touch</span>
-      </div>
       </div>
       <section
         class="container d-flex display-one-background hero-section hero-img"
@@ -162,9 +174,7 @@ Description: Midterm project with basic html structure and javascript functional
           </div>
         </div>
       </section>
-      <section
-        class="container section-five background on-background-color"
-      >
+      <section class="container section-five background on-background-color">
         <img
           src="../images/thumbnail.png"
           alt="thumbnail"
@@ -193,7 +203,11 @@ Description: Midterm project with basic html structure and javascript functional
         />
         <small class="gray-4-color cc-note">© Nishad Patne | 2024</small>
         <div class="d-flex align-items-center justify-content-around body-font">
-          <span onclick="{openAboutMe()}" class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">About</span>
+          <span
+            onclick="{openAboutMe()}"
+            class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2"
+            >About</span
+          >
           <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Services</span>
         </div>
       </footer>
@@ -201,7 +215,14 @@ Description: Midterm project with basic html structure and javascript functional
     <section class="light-box d-none" id="lightbox">
       <i class="bi bi-x-circle-fill close-icon" id="closeButton"></i>
       <div id="player"></div>
-      <span class="bold-body-font white-color mt-3">Already in started, what to <span class="display-one-color h3-font resume-link" onclick={resumeVideo()} >Resume</span>?</span>
+      <span class="bold-body-font white-color mt-3"
+        >Already in started, what to
+        <span
+          class="display-one-color h3-font resume-link"
+          onclick="{resumeVideo()}"
+          >Resume</span
+        >?</span
+      >
     </section>
   </body>
   <script>
@@ -214,8 +235,8 @@ Description: Midterm project with basic html structure and javascript functional
     var player;
     function onYouTubeIframeAPIReady() {
       player = new YT.Player("player", {
-        height: window.innerHeight*0.8,
-        width: window.innerWidth*0.7,
+        height: window.innerHeight * 0.8,
+        width: window.innerWidth * 0.7,
         videoId: "YLo6g58vUm0",
         playerVars: {
           playsinline: 1,
@@ -227,9 +248,17 @@ Description: Midterm project with basic html structure and javascript functional
       });
     }
 
-    function onPlayerStateChange(event){
-
+    function adjustPlayerSize() {
+      var newWidth = window.innerWidth * 0.7; // 70% of the viewport width
+      var newHeight = window.innerHeight * 0.8; // 80% of the viewport height
+      player.setSize(newWidth, newHeight);
     }
+
+    window.addEventListener("resize", adjustPlayerSize);
+
+    adjustPlayerSize();
+
+    function onPlayerStateChange(event) {}
 
     function onPlayerReady(event) {
       // event.target.playVideo();
@@ -245,11 +274,13 @@ Description: Midterm project with basic html structure and javascript functional
       player.playVideo();
     }
 
-    document.getElementById("lightbox").addEventListener("click",handleExit);
-    document.getElementById("lightbox").addEventListener("exitButton",handleExit);
+    document.getElementById("lightbox").addEventListener("click", handleExit);
+    document
+      .getElementById("lightbox")
+      .addEventListener("exitButton", handleExit);
 
     function handleExit(e) {
-      if(e.target.tagName == "SPAN"){
+      if (e.target.tagName == "SPAN") {
         return;
       }
       document.getElementById("lightbox").classList.remove("d-flex");
@@ -258,28 +289,26 @@ Description: Midterm project with basic html structure and javascript functional
       stopVideo();
     }
 
-    function openAboutMe(){
-      window.open("https://nishadpatne.framer.website/","_blank")
+    function openAboutMe() {
+      window.open("https://nishadpatne.framer.website/", "_blank");
     }
 
-    function resumeVideo(){
+    function resumeVideo() {
       player.seekTo(currentPlaybackTime);
-
     }
     let isNavOpen = true;
-    function handleNav(){
-      if(isNavOpen){
+    function handleNav() {
+      if (isNavOpen) {
         document.querySelector(".nav-open").style.display = "none";
         document.querySelector(".nav-close").style.display = "block";
         document.getElementById("nav").style.display = "block";
         isNavOpen = false;
-      }else{
+      } else {
         document.querySelector(".nav-open").style.display = "block";
         document.querySelector(".nav-close").style.display = "none";
         document.getElementById("nav").style.display = "none";
-        isNavOpen=true;
+        isNavOpen = true;
       }
     }
-
-    </script>
+  </script>
 </html>
