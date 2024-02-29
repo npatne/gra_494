@@ -31,6 +31,7 @@ Description: Midterm project with basic html structure and javascript functional
   </head>
   <body>
     <main>
+      <div>
       <nav
         class="nav d-flex align-items-center display-two-background white-color justify-content-between"
       >
@@ -39,13 +40,22 @@ Description: Midterm project with basic html structure and javascript functional
           alt="logo-design-systems"
           class="logo"
         />
-        <div class="d-flex align-items-center justify-content-around body-font">
+          <i class="bi bi-list h2-font nav-open" onclick={handleNav()}></i>
+          <i class="bi bi-x h2-font nav-close" onclick={handleNav()}></i>
+        <div class="d-flex align-items-center justify-content-around nav-link-container-horizontal body-font">
           <span onclick="{openAboutMe()}" class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">About</span>
           <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Services</span>
           <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Pricing</span>
           <button class="btn-secondary">Get in Touch</button>
         </div>
       </nav>
+      <div role="navigation" id="nav" class="nav-link-container-vertical display-two-background body-font white-color pt-2 pb-4">
+        <span onclick="{openAboutMe()}" class="nav-link pl-4 pt-2 d-block">About</span>
+        <span class="nav-link pl-4 pt-3 d-block">Services</span>
+        <span class="nav-link pl-4 pt-3 d-block">Pricing</span>
+        <span class="nav-link pl-4 pt-3 d-block">Get In Touch</span>
+      </div>
+      </div>
       <section
         class="container d-flex display-one-background hero-section hero-img"
       >
@@ -78,9 +88,9 @@ Description: Midterm project with basic html structure and javascript functional
         </div>
       </section>
       <section class="container background on-background-color section-three">
-        <div class="d-flex align-items-center mt-4 pt-4">
+        <div class="section-three-content mt-4 pt-4">
           <div class="mr-4">
-            <p class="h2-font mb-4">Demystifying Design Systems</p>
+            <p class="h2-font mb-3">Demystifying Design Systems</p>
             <p class="body-font mt-2 mb-1">
               Curious about what design systems are and how they can
               revolutionize your digital presence? Design Systems offers you a
@@ -97,7 +107,7 @@ Description: Midterm project with basic html structure and javascript functional
           </div>
           <img
             src="../images/section2BG.jpeg"
-            class="section-image box-shadow"
+            class="section-three-image box-shadow"
             alt="Section three image"
           />
         </div>
@@ -106,12 +116,12 @@ Description: Midterm project with basic html structure and javascript functional
         class="section-four container white-background d-flex flex-column justify-content-center align-items-center"
       >
         <p class="h2-font">Our Expertise and Services</p>
-        <div class="card-container d-flex justify-content-around mt-4 pt-3">
+        <div class="card-container mt-4 pt-3">
           <div
-            class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4"
+            class="card d-flex flex-column primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4"
           >
             <p class="h3-font mb-3">Bespoke Design Systems</p>
-            <p class="body-font mb-2">
+            <p class="body-font mb-3">
               Our bespoke design systems are meticulously crafted to reflect
               your brand's unique personality and meet the specific needs of
               your audience.
@@ -119,20 +129,20 @@ Description: Midterm project with basic html structure and javascript functional
             <button class="card-button btn-secondary">View</button>
           </div>
           <div
-            class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4"
+            class="card d-flex flex-column primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4"
           >
             <p class="h3-font mb-3">Google Material Theme</p>
-            <p class="body-font mb-2">
+            <p class="body-font mb-3">
               Harness the power of Google's Material Theme to create sleek and
               intuitive interfaces that resonate with modern users.
             </p>
             <button class="card-button btn-secondary">View</button>
           </div>
           <div
-            class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4"
+            class="card d-flex flex-column primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3 mr-4"
           >
             <p class="h3-font mb-3">Salesforce Lightning Design</p>
-            <p class="body-font mb-2">
+            <p class="body-font mb-3">
               Optimize user productivity and satisfaction with Salesforce
               Lightning Design. Our experts leverage this robust framework to
               design interfaces that prioritize efficiency, scalability, and
@@ -141,10 +151,10 @@ Description: Midterm project with basic html structure and javascript functional
             <button class="card-button btn-secondary">View</button>
           </div>
           <div
-            class="card primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3"
+            class="card d-flex flex-column primary-background on-primary-color box-shadow rounded pt-3 pb-3 pl-3 pr-3"
           >
             <p class="h3-font mb-3">Apple Human Interface Guidelines</p>
-            <p class="body-font mb-2">
+            <p class="body-font mb-3">
               Elevate your app's design to Apple's standards with our adherence
               to Human Interface Guidelines.
             </p>
@@ -153,7 +163,7 @@ Description: Midterm project with basic html structure and javascript functional
         </div>
       </section>
       <section
-        class="container section-five background on-background-color d-flex"
+        class="container section-five background on-background-color"
       >
         <img
           src="../images/thumbnail.png"
@@ -181,14 +191,14 @@ Description: Midterm project with basic html structure and javascript functional
           alt="logo-design-systems"
           class="logo"
         />
-        <small class="gray-4-color">© Nishad Patne | 2024</small>
+        <small class="gray-4-color cc-note">© Nishad Patne | 2024</small>
         <div class="d-flex align-items-center justify-content-around body-font">
           <span onclick="{openAboutMe()}" class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">About</span>
           <span class="nav-link pt-1 pl-1 pr-1 pb-1 mr-2">Services</span>
         </div>
       </footer>
     </main>
-    <section class="lightBox d-none" id="lightbox">
+    <section class="light-box d-none" id="lightbox">
       <i class="bi bi-x-circle-fill close-icon" id="closeButton"></i>
       <div id="player"></div>
       <span class="bold-body-font white-color mt-3">Already in started, what to <span class="display-one-color h3-font resume-link" onclick={resumeVideo()} >Resume</span>?</span>
@@ -253,10 +263,23 @@ Description: Midterm project with basic html structure and javascript functional
     }
 
     function resumeVideo(){
-      console.log('🐱‍🏍 current time', currentPlaybackTime);
       player.seekTo(currentPlaybackTime);
 
     }
-    
+    let isNavOpen = true;
+    function handleNav(){
+      if(isNavOpen){
+        document.querySelector(".nav-open").style.display = "none";
+        document.querySelector(".nav-close").style.display = "block";
+        document.getElementById("nav").style.display = "block";
+        isNavOpen = false;
+      }else{
+        document.querySelector(".nav-open").style.display = "block";
+        document.querySelector(".nav-close").style.display = "none";
+        document.getElementById("nav").style.display = "none";
+        isNavOpen=true;
+      }
+    }
+
     </script>
 </html>
