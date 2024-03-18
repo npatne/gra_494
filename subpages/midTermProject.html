@@ -231,8 +231,20 @@ Description: Midterm project with basic html structure and javascript functional
     scriptTag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName("script")[0];
     firstScriptTag.parentNode.insertBefore(scriptTag, firstScriptTag);
-
+    let isNavOpen = true;
     var player;
+
+    document.getElementById("lightbox").addEventListener("click", handleExit);
+    document
+      .getElementById("closeButton")
+      .addEventListener("click", handleExit);
+
+      function adjustPlayerSize() {
+      var newWidth = window.innerWidth * 0.7; // 70% of the viewport width
+      var newHeight = window.innerHeight * 0.8; // 80% of the viewport height
+      player.setSize(newWidth, newHeight);
+    }
+
     function onYouTubeIframeAPIReady() {
       player = new YT.Player("player", {
         height: window.innerHeight * 0.8,
@@ -246,12 +258,8 @@ Description: Midterm project with basic html structure and javascript functional
           onStateChange: onPlayerStateChange,
         },
       });
-    }
 
-    function adjustPlayerSize() {
-      var newWidth = window.innerWidth * 0.7; // 70% of the viewport width
-      var newHeight = window.innerHeight * 0.8; // 80% of the viewport height
-      player.setSize(newWidth, newHeight);
+      adjustPlayerSize();
     }
 
     window.addEventListener("resize", adjustPlayerSize);
@@ -274,11 +282,6 @@ Description: Midterm project with basic html structure and javascript functional
       player.playVideo();
     }
 
-    document.getElementById("lightbox").addEventListener("click", handleExit);
-    document
-      .getElementById("lightbox")
-      .addEventListener("exitButton", handleExit);
-
     function handleExit(e) {
       if (e.target.tagName == "SPAN") {
         return;
@@ -296,7 +299,6 @@ Description: Midterm project with basic html structure and javascript functional
     function resumeVideo() {
       player.seekTo(currentPlaybackTime);
     }
-    let isNavOpen = true;
     function handleNav() {
       if (isNavOpen) {
         document.querySelector(".nav-open").style.display = "none";
